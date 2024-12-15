@@ -75,3 +75,9 @@ font-weight: 500;
     margin-top: 40px;
     color:#737373;
 }
+.formSwitch span{
+    margin-left: 6px;
+    color:white;
+    font-weight: 500;
+    cursor: pointer;
+}
