@@ -8,13 +8,13 @@ const Login = () => {
     <div className='login'>
       <img src={logo}  className="loginlogo" alt="" />
       <div className="loginForm">
-        <h1>Sign Up</h1>
+        <h1>{signState}</h1>
         <form>
           <input type="text" placeholder='Your name'/>
           <input type="email" placeholder='Email'/>
           <input type="password" placeholder='Password'/>
 
-<button>Sign Up</button>
+<button>{signState}</button>
 <div className="formHelp">
   <div className="remember">
     <input type="checkbox" />
@@ -24,6 +24,7 @@ const Login = () => {
 </div>
         
         </form>
+
       </div>
     </div>
   )
