@@ -5,6 +5,12 @@ import { useNavigate, useParams } from 'react-router-dom'
 
 
 const Player = () => {
+  const [apiData,setapiData]=useState({
+  name:"",
+  key:"",
+  published_at:"",
+  typeof:""
+})
   return (
     <div className='player'>
       
