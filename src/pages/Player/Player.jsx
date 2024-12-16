@@ -18,6 +18,12 @@ const Player = () => {
       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmMDBlMTliNjU1MDliNmU0NjliMTllMGJhZWVjOGI1MyIsIm5iZiI6MTczMTQyMDA5Mi42NDIsInN1YiI6IjY3MzM1ZmJjNGI1ZmQ1NWExNmNhMzBmMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.U5c8kHvJ0MuqdrGxBsxbjGaXk2-cCX-kW-78gIswSMs'
     }
   };
+  useEffect(()=>{
+    fetch(`https://api.themoviedb.org/3/movie/${id}/videos?language=en-US`, options)
+    .then(res => res.json())
+    .then(res =>setapiData(res.results[0]))
+    .catch(err => console.error(err));
+  },[])
   
   return (
     <div className='player'>
@@ -29,6 +35,8 @@ const Player = () => {
       <p>{apiData.name}</p>
       <p>{apiData.typeof}</p>
     </div>
+   </div>
+      
   )
 }
 
