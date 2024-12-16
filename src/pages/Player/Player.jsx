@@ -11,6 +11,14 @@ const Player = () => {
   published_at:"",
   typeof:""
 })
+  const options = {
+    method: 'GET',
+    headers: {
+      accept: 'application/json',
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmMDBlMTliNjU1MDliNmU0NjliMTllMGJhZWVjOGI1MyIsIm5iZiI6MTczMTQyMDA5Mi42NDIsInN1YiI6IjY3MzM1ZmJjNGI1ZmQ1NWExNmNhMzBmMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.U5c8kHvJ0MuqdrGxBsxbjGaXk2-cCX-kW-78gIswSMs'
+    }
+  };
+  
   return (
     <div className='player'>
       <img src={backArrow} alt="" onClick={()=>{navigate(-2)}}/>
