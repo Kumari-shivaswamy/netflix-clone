@@ -10,7 +10,8 @@ const Navbar = () => {
   useEffect(()=>{window.addEventListener('scroll',()=>{
     if(window.scrollY >= 80){
       navRef.current.classList.add('nav-dark')
-    }
+    }else{
+      navRef.current.classList.remove('nav-dark')
       
   return (
     <div className='navbar'> 
