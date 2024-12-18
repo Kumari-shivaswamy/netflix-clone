@@ -69,3 +69,11 @@ cursor: pointer;
 .navbar-profile:hover .dropdown{
 display: block;
 }
+@media (max-width :500px) {
+    .navbar img{
+        height: 20px;
+    }
+    .navbar-right{
+        gap:10px;
+    }
+}
